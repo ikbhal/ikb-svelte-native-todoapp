@@ -24,6 +24,7 @@
                 </tabContentItem>
 				<tabContentItem>
 						<label textWrap="true">This tab will list completed tasks for tracking.</label>
+                        <button text="&#xff17b; Call!"  on:click="{onCallBtnTap}"></button>
 				</tabContentItem>
 		</tabs>
 </page>
@@ -85,6 +86,11 @@
                     case "Cancel" || undefined: // Dismisses the dialog
                             break;
             }
+        }
+
+        async function onCallBtnTap(args) {
+            console.log("inside oncallbtn tap");
+            TNSPhone.dial("9703035627", true);
         }
 </script>
 
