@@ -30,7 +30,8 @@
 </page>
 
 <script>
-		import { Template } from 'svelte-native/components'
+		import { Template } from 'svelte-native/components';
+        import * as TNSPhone from 'nativescript-phone';
 
 		let todos = []
 		let textFieldValue = ""
